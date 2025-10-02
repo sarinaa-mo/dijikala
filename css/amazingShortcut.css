@@ -1,0 +1,113 @@
+.AmazingShortcut {
+  width: 80%;
+  height: 110px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.Right-Amazingshortcut {
+  width: 40%;
+  height: 140px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.amazingshortcut-discount {
+  width: 108px;
+  height: 30px;
+  background-color: #029a49;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 16px;
+  padding-right: 40px;
+
+  font-size: 16px;
+  font-weight: 700;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.left-Amazingshortcut {
+  width: 60%;
+  height: 140px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+
+ 
+}
+.Amazingshortcut-items {
+  position: relative;
+  display: inline-block;
+  
+ 
+}
+ .Amazingshortcut-items img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    
+  }
+
+.discount1 {
+  
+  font-family: var(--number);
+  display: inline-block;
+  flex-direction: row-reverse;
+  gap: 20px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #d82e4e;
+  font-size: 12px;
+  color: whitesmoke;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(100%, 5%);
+}
+.Amazingshortcut-more {
+  font-family: var(--font-family);
+  text-decoration: none;
+  width: 100px;
+  height: 30px;
+  
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding-right: 10px;
+  line-height: 30px;
+  position: relative;
+  background-image: url(../images/./partnership1/freshPattern\ cover.svg);
+  object-fit: cover;
+  a {
+    text-decoration: none;
+    color: #029a49;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    img {
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}

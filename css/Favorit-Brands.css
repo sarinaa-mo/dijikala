@@ -1,0 +1,62 @@
+.favorit-brands{
+    width: 100%;
+    height: 223px;
+    
+    display: flex;
+    justify-content: center;
+    
+    .favorit-brands-center{
+        width: 80%;
+        height: 100%;
+         border: 1px solid lightgray;
+        border-radius: 16px;
+        
+    }
+    .favorit-brands-Header{
+        width: 100%;
+        height: 44px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        img{
+            width: 20px;
+            height: 20px;
+            line-height: 44px;
+        }
+        p{
+            font-size: 24px;
+            font-family: var(--font-family);
+            line-height: 44px;
+        }
+       
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+        height: 179px;
+      text-align: center;
+      font-size: 18px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition-property: transform;
+      box-sizing: content-box;
+      img{
+       border-radius: 50%;
+       
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}

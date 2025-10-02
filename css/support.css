@@ -1,0 +1,222 @@
+
+[for=modal-1]{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 3;
+  background-color: #ef4056;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  line-height: 50px;
+  cursor: pointer;
+
+}
+.modal-1{
+      width: 360px;
+      height: 500px;
+      background-color: #f9f9f9bb;
+      position: fixed;
+      bottom: 100px; /* بالای دکمه چت باز شود */
+      right: 40px;
+      transform: scale(0);
+     opacity: 0;
+     transition: all 0.3s ease-in-out;
+     z-index: 6;
+     border-radius: 8px;
+     border: 0.5px solid red;
+     .chat-header{
+      width: 100%;
+      height: 57px;
+      background-color: #ef4056;
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 50px;
+      line-height: 57px;
+      h3{
+        color: #fff;
+      font-family: var(--font-family);
+      
+      }
+      img{
+        width: 30px;
+        height: 30px;
+        
+        cursor: pointer;
+
+      }
+      
+     }
+     .Hi{
+        font-size: 16px;
+        font-family: var(--font-family);
+      }
+      
+      
+
+}
+  [for=close-1]{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    background-color: #ef4056;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    right: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+
+  }
+#modal-1:checked ~ .modal-1{
+  transform: scale(1);
+  opacity: 1;
+  
+}
+#close-1:checked ~ .modal-1 {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+#close-1 , #modal-1{
+  display: none;
+}
+
+  
+
+
+
+[for=modal]{
+  display: inline-flex;
+   width: max-content;
+  height: 40px;
+  position: fixed;
+  left: 16px;
+  bottom: 32px;
+  border-radius: 15px;
+  background-color: #016c33 ;
+  text-align: center;
+  color: #fff;
+  line-height: 40px;
+   font-family: var(--font-family);
+   z-index: 6;
+  cursor: pointer;
+ 
+  padding: 0 20px;
+  img{
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+
+}
+.modal{
+  width: 450px;
+  height: 320px;
+  background-color: #2b2b2bbb;
+  border-radius: 8px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 6;
+  transition: 300ms;
+  
+  
+  
+}
+
+.modal-center{
+  width: 450px;
+  height: 320px;
+  background-color:lightgray;
+  margin: 0 10px;
+  h5{
+    color: #3f4064;
+    font-size: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    
+  }
+ 
+}
+
+  
+  .image{
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: center;
+   text-align: center;
+   
+  
+  .card-fast{
+    
+    span{
+      font-size: 16px;
+      font-weight:bold;
+      font-family: var(--font-family);
+      color: black;
+     
+    }
+    img{
+      background-color: rgb(254, 235, 222);
+      
+    }
+  }
+    .card-discount{
+
+    span{
+     font-size: 16px;
+      font-weight:bold;
+      font-family: var(--font-family);
+      color: black;   
+
+    }
+    img{
+      background-color: rgb(219, 243, 230);
+    }
+  }
+}
+    
+  
+  [for=close]{
+    display: inline;
+    width: 24px;
+    height: 24px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    line-height: 24px;
+    color: #2b2b2b;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+
+  }
+/* وقتی مودال باز است */
+#modal:checked ~ .modal {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* وقتی مودال بسته می‌شود */
+#close:checked ~ .modal {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+#close , #modal{
+  display: none;
+}
