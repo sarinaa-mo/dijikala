@@ -1,0 +1,224 @@
+.footer {
+  width: 100%;
+  height: 964px;
+  background-color: pink;
+  border-top: 1px solid #a1a3a8;
+  border-radius: 5px;
+
+  .footer-header {
+    width: 100%;
+    height: 40px;
+
+    .footer-header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 40px;
+      margin-right: 18px;
+      img {
+        width: 195px;
+        height: 30px;
+      }
+      .footer-header-left {
+        width: 103px;
+        height: 40px;
+        padding: 8px 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        width: 115px;
+        height: 26px;
+        border-radius: 8px;
+        border: 1px solid #a1a3a8;
+        margin-left: 18px;
+
+        a {
+          text-decoration: none;
+          color: #a1a3a8;
+          font-family: var(--font-family);
+          font-size: 13px;
+          display: flex;
+
+          img {
+            width: 24px;
+            height: 24px;
+            line-height: 26px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    width: 100%;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+
+    p {
+      color: #3f4064;
+      font-family: var(--font-family);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-top: 12px;
+      margin-right: 18px;
+    }
+    span {
+      display: inline-block;
+      width: 1px;
+      height: 25px;
+      background-color: #a1a3a8;
+      margin: 0 20px;
+    }
+  }
+  a {
+    width: 291px;
+    height: 103px;
+    font-family: var(--number);
+    text-decoration: none;
+    color: #3f4064;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.17;
+    padding-right: 10px;
+  }
+  .footer-3 {
+    width: 293px;
+    height: 103px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-3-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      img {
+        width: 52px;
+        height: 52px;
+        padding-top: 20px;
+        padding-right: 20px;
+        line-height: 103px;
+      }
+      p {
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 400;
+        color: #3f4064;
+      }
+    }
+  }
+  .footer-4 {
+    width: 100%;
+    height: 270px;
+    background-color: peru;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    .foorer-4-1 {
+      width: 376px;
+      height: 270px;
+
+      h3 {
+        color: #3f4064;
+        font-weight: 700;
+        line-height: 2.1;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: var(--font-family);
+      }
+      a {
+        display: inline-block;
+        ul li {
+          list-style: none;
+          font-weight: 300;
+          list-style: 2.15;
+          font-size: 16px;
+          font-family: var(--font-family);
+          margin: 0 0 8px;
+          color: #81858b;
+        }
+      }
+    }
+  }
+  .footer-social {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    background-color: blue;
+
+    justify-content: center;
+
+    a {
+      line-height: 40px;
+      margin-left: 32px;
+      img {
+        line-height: 40px;
+      }
+    }
+  }
+  h4 {
+    width: 324px;
+    height: 33px;
+    font-weight: 700;
+    line-height: 2.1;
+    font-size: 16px;
+    color: #3f4064;
+    font-family: var(--font-family);
+  }
+  .form-news {
+    width: 324px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input[type="email"] {
+      width: 262px;
+      height: 32px;
+      padding: 0 8px;
+      font-family: var(--font-family);
+      font-size: 12px;
+      background-color: #e0e0e2;
+      border: none;
+     
+    }
+    
+  /* وقتی ایمیل درست وارد شود → دکمه قرمز و متن سفید */
+input:valid:not(:placeholder-shown) + button {
+  background-color: red;
+  color: white;
+}
+
+    button[type="submit"] {
+      
+      background-color: #e0e0e2;
+      padding: 4px 4px;
+      border-radius: 5px;
+      font-family: var(--font-family);
+      font-size: 16px;
+      font-weight: 100;
+      border: none;
+      cursor: pointer;
+      color:#d8d8e0 ;
+      
+    }
+    input:invalid ~ .error-text {
+  display: block;
+  
+}
+  }
+}
