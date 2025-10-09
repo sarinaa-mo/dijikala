@@ -1,10 +1,10 @@
 .footer {
   width: 100%;
   height: 964px;
-  background-color: pink;
+  
   border-top: 1px solid #a1a3a8;
   border-radius: 5px;
-
+  overflow-x: hidden;
   .footer-header {
     width: 100%;
     height: 40px;
@@ -41,6 +41,7 @@
           font-family: var(--font-family);
           font-size: 13px;
           display: flex;
+          
 
           img {
             width: 24px;
@@ -89,7 +90,7 @@
     padding-right: 10px;
   }
   .footer-3 {
-    width: 293px;
+    width: 100%;
     height: 103px;
     display: flex;
     justify-content: space-between;
@@ -97,8 +98,10 @@
 
     .footer-3-items {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
       align-items: center;
+
       a {
         display: flex;
         align-items: center;
@@ -122,15 +125,18 @@
   }
   .footer-4 {
     width: 100%;
-    height: 270px;
-    background-color: peru;
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 40px;
+    gap: 140px;
+    direction: rtl;
     margin-bottom: 10px;
+
     .foorer-4-1 {
-      width: 376px;
+      width: 250px;
       height: 270px;
 
       h3 {
@@ -156,23 +162,28 @@
     }
   }
   .footer-social {
-    width: 300px;
+    width: fit-content;
     height: 40px;
-    display: flex;
-    background-color: blue;
-
-    justify-content: center;
+   
+    line-height: 40px;
 
     a {
-      line-height: 40px;
-      margin-left: 32px;
+      text-align: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      a:hover {
+        background-color: rgba(186, 119, 119, 0.2); /* افکت هنگام هاور */
+      }
+
       img {
-        line-height: 40px;
+        width: 50px;
+        height: 50px;
       }
     }
   }
   h4 {
-    width: 324px;
     height: 33px;
     font-weight: 700;
     line-height: 2.1;
@@ -187,24 +198,23 @@
     align-items: center;
     justify-content: space-between;
     input[type="email"] {
-      width: 262px;
+      width: 230px;
       height: 32px;
       padding: 0 8px;
       font-family: var(--font-family);
       font-size: 12px;
       background-color: #e0e0e2;
       border: none;
-     
+      outline: none;
     }
-    
-  /* وقتی ایمیل درست وارد شود → دکمه قرمز و متن سفید */
-input:valid:not(:placeholder-shown) + button {
-  background-color: red;
-  color: white;
-}
+
+    /* وقتی ایمیل درست وارد شود → دکمه قرمز و متن سفید */
+    input:valid:not(:placeholder-shown) + button {
+      background-color: red;
+      color: white;
+    }
 
     button[type="submit"] {
-      
       background-color: #e0e0e2;
       padding: 4px 4px;
       border-radius: 5px;
@@ -213,12 +223,176 @@ input:valid:not(:placeholder-shown) + button {
       font-weight: 100;
       border: none;
       cursor: pointer;
-      color:#d8d8e0 ;
-      
+      color: #d8d8e0;
     }
     input:invalid ~ .error-text {
-  display: block;
-  
-}
+      display: block;
+    }
   }
+  .footer-app {
+    width: 1488px;
+    height: 76px;
+    background-color: #3c4b6d;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 28px;
+    padding-left: 50px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .app-right {
+    width: 288px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    line-height: 76px;
+
+    img {
+      width: 44px;
+      height: 44px;
+      line-height: 0;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+    p {
+      font-family: var(--font-family);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      margin-right: 16px;
+    }
+  }
+
+  .app-left {
+    width: 1000px;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+    padding-left: 5px;
+    box-sizing: border-box;
+
+    div img {
+      width: 142px;
+      height: 44px;
+    }
+    a:nth-child(3) img {
+      width: 42px;
+      height: 44px;
+      border-radius: 8px;
+      background-color: #fff; /* هر استایل دلخواه */
+      padding: 5px;
+      box-sizing: border-box;
+    }
+  }
+  .footer-5 {
+  width: 100%;
+  max-width: 1488px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #f0f0f1;
+  padding: 32px 0;
+  font-family: var(--font-family);
+  direction: rtl;
+}
+
+.webkit {
+  width: 60%;
+  color: #81858b;
+}
+
+/* عنوان */
+.webkit h1 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #62666d;
+  margin-bottom: 10px;
+}
+
+/* پاراگراف اصلی */
+.webkit p {
+  font-size: 15px;
+  line-height: 2;
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* فقط دو خط دیده میشه */
+  transition: all 0.5s ease;
+}
+
+/* پنهان کردن checkbox */
+#readMore {
+  display: none;
+}
+
+/* وقتی روی مشاهده بیشتر کلیک شد */
+#readMore:checked + p {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+/* دکمه مشاهده بیشتر / کمتر */
+.readmore-btn {
+  display: inline-block;
+  margin-top: 8px;
+  color: #19bfd3;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* متن دکمه در حالت بسته */
+.readmore-btn::before {
+  content: "مشاهده بیشتر";
+}
+
+/* وقتی باز شد تغییر متن به "مشاهده کمتر" */
+#readMore:checked + p + .readmore-btn::before {
+  content: "مشاهده کمتر";
+}
+
+/* بخش چپ (لوگوها) */
+.footer-logos {
+  width: 28%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px; /* فاصله بین عکس‌ها */
+}
+
+.footer-logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #e0e0e2;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-logos a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.footer-logos img {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+  
 }

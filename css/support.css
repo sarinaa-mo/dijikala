@@ -1,5 +1,4 @@
-
-[for=modal-1]{
+[for="modal-1"] {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -15,197 +14,285 @@
   box-sizing: border-box;
   line-height: 50px;
   cursor: pointer;
-
 }
-.modal-1{
-      width: 360px;
-      height: 500px;
-      background-color: #f9f9f9bb;
-      position: fixed;
-      bottom: 100px; /* بالای دکمه چت باز شود */
-      right: 40px;
-      transform: scale(0);
-     opacity: 0;
-     transition: all 0.3s ease-in-out;
-     z-index: 6;
-     border-radius: 8px;
-     border: 0.5px solid red;
-     .chat-header{
-      width: 100%;
-      height: 57px;
-      background-color: #ef4056;
-      border-radius: 8px 8px 0 0;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      gap: 50px;
-      line-height: 57px;
-      h3{
-        color: #fff;
-      font-family: var(--font-family);
-      
-      }
-      img{
-        width: 30px;
-        height: 30px;
-        
-        cursor: pointer;
-
-      }
-      
-     }
-     .Hi{
-        font-size: 16px;
-        font-family: var(--font-family);
-      }
-      
-      
-
-}
-  [for=close-1]{
-    display: inline;
-    width: 30px;
-    height: 30px;
+.modal-1 {
+  width: 360px;
+  height: 600px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 100px; /* بالای دکمه چت باز شود */
+  right: 40px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 6;
+  border-radius: 8px;
+  border: 0.5px solid red;
+ 
+  .chat-header {
+    width: 100%;
+    height: 57px;
     background-color: #ef4056;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -50px;
-    right: 10px;
-    text-align: center;
-    line-height: 30px;
-    color: whitesmoke;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    line-height: 57px;
+    
+    
+    h3 {
+      color: #fff;
+      font-family: var(--font-family);
+      padding: 8px;
+      
+    }
+    img {
+       
+       position: absolute;
+       left: 12%;
+      cursor: pointer;
+    }
   }
-#modal-1:checked ~ .modal-1{
+  .Hi {
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    line-height: 2.15;
+    color: #2b2b2b;
+    padding-right: 10px;
+    border-bottom: 1px solid #e0e0e2;
+    
+    
+    
+  }
+  p{
+       font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    line-height: 2.15;
+    color: #2b2b2b;
+    padding-right: 10px;
+    border-bottom: 1px solid #e0e0e2;
+    padding-bottom: 20px;
+      
+    }
+  ul li{
+    list-style: none;
+    padding-top: 40px;
+    position: relative;
+    
+    a{
+      width: 100%;
+      display: flex;
+      flex: 1;
+      gap: 90px;
+      font-size: 16px;
+    font-family: var(--font-family);
+    text-decoration: none;
+    color: #2b2b2b;
+    border-bottom: 1px solid #e0e0e2;
+    border-radius: 8px;
+    img{
+      position: absolute;
+      left: 12%;
+    }
+    .firstQ{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+     
+      overflow: hidden;
+      padding-left: 8px;
+      padding-right: 8px;
+      margin-bottom: 20px;
+    }
+    }
+  }
+  .contact-me{
+    width: 127px;
+    height: 48px;
+    position: absolute;
+    left: 35%;
+    top: 80%;
+    border-radius: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ef4056;
+    border:#ef4056 ;
+    span{
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+    }
+    svg{
+      position: absolute;
+      top: 17%;
+      left: 5%;
+    }
+    
+  }
+}
+[for="close-1"] {
+  display: inline;
+  width: 30px;
+  height: 30px;
+  background-color: #ef4056;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -52px;
+  right: 10px;
+  text-align: center;
+  line-height: 30px;
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#modal-1:checked ~ .modal-1 {
   transform: scale(1);
   opacity: 1;
-  
 }
 #close-1:checked ~ .modal-1 {
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
 }
-#close-1 , #modal-1{
+#close-1,
+#modal-1 {
   display: none;
 }
 
-  
-
-
-
-[for=modal]{
+[for="modal"] {
   display: inline-flex;
-   width: max-content;
+  width: max-content;
   height: 40px;
   position: fixed;
   left: 16px;
   bottom: 32px;
   border-radius: 15px;
-  background-color: #016c33 ;
+  background-color: #016c33;
   text-align: center;
   color: #fff;
   line-height: 40px;
-   font-family: var(--font-family);
-   z-index: 6;
+  font-family: var(--font-family);
+  z-index: 6;
   cursor: pointer;
- 
+
   padding: 0 20px;
-  img{
+  img {
     margin-top: 5px;
     margin-right: 5px;
   }
-
-
 }
-.modal{
+.modal {
   width: 450px;
   height: 320px;
-  background-color: #2b2b2bbb;
+  
   border-radius: 8px;
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 6;
   transition: 300ms;
-  
-  
-  
 }
 
-.modal-center{
+.modal-center {
   width: 450px;
   height: 320px;
-  background-color:lightgray;
+  background-color: #fff;
   margin: 0 10px;
-  h5{
+  overflow-y: hidden;
+
+  h5 {
     color: #3f4064;
     font-size: 16px;
     padding: 20px;
     box-sizing: border-box;
-    
   }
- 
 }
 
-  
-  .image{
-   display: flex;
-   flex-direction: row-reverse;
-   justify-content: center;
-   text-align: center;
-   
-  
-  .card-fast{
-    
-    span{
+.image-center {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  position: absolute;
+
+  top: 50px;
+
+  .image-cenetr-right {
+    width: 204px;
+    height: 250px;
+    border-radius: 8px;
+    background-color: #dbf3e6;
+    position: relative;
+    span {
       font-size: 16px;
-      font-weight:bold;
+      font-weight: bold;
       font-family: var(--font-family);
       color: black;
-     
+      font-weight: 300;
+      position: absolute;
+      right: 10px;
     }
-    img{
+   
+    
+    img {
+      width: 130px;
       background-color: rgb(254, 235, 222);
-      
+      border-radius: 8px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
-    .card-discount{
-
-    span{
-     font-size: 16px;
-      font-weight:bold;
+  .image-cenetr-left {
+    width: 204px;
+    height: 250px;
+    border-radius: 8px;
+    background-color: #feebde;
+    position: relative;
+    span {
+      font-size: 16px;
+      font-weight: bold;
       font-family: var(--font-family);
-      color: black;   
-
+      color: black;
+      font-weight: 300;
+      position: absolute;
+      right: 10px;
     }
-    img{
-      background-color: rgb(219, 243, 230);
+    img {
+      width: 130px;
+      background-color: rgb(254, 235, 222);
+      border-radius: 8px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
 }
-    
-  
-  [for=close]{
-    display: inline;
-    width: 24px;
-    height: 24px;
-    background-color: #f9f9f9;
-    border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-align: center;
-    line-height: 24px;
-    color: #2b2b2b;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
 
-  }
+[for="close"] {
+  display: inline;
+  width: 24px;
+  height: 24px;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: center;
+  line-height: 24px;
+  color: #2b2b2b;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
 /* وقتی مودال باز است */
 #modal:checked ~ .modal {
   transform: translate(-50%, -50%) scale(1);
@@ -217,6 +304,7 @@
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
 }
-#close , #modal{
+#close,
+#modal {
   display: none;
 }

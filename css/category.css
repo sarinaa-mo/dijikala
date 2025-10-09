@@ -28,12 +28,121 @@
         margin: 10px auto;
         text-align: center;
       }
-      div.ellipsis {
+      [for="moreSee"] {
         width: 52px;
         height: 52px;
         margin-right: 30px;
         background-color: #e3e5e9;
         border-radius: 80%;
+      }
+      #moreSee,
+      #close-me {
+        display: none;
+      }
+      .more-Service {
+        width: 768px;
+        height: 655px;
+        background-color: lightgray;
+        display: none;
+        position: absolute;
+        top: 60%;
+        left: 30%;
+
+        z-index: 8;
+        border-radius: 9px;
+      }
+      [for="close-me"] {
+        display: inline;
+        width: 30px;
+        height: 30px;
+        background-color: gray;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        text-align: center;
+        line-height: 30px;
+        color: whitesmoke;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      #moreSee:checked ~ .more-Service {
+        display: block;
+      }
+      /* عنوان داخل مودال */
+      .service-title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      /* شبکه آیتم‌ها */
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1));
+        row-gap: 12px;
+        padding: 10px;
+      }
+
+      /* آیتم هر سرویس */
+      .service-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+
+      .service-item:hover {
+        transform: translateY(-5px);
+      }
+
+      /* دایره آیکون */
+      .icon-circle {
+        width: 80px;
+        height: 127px;
+        margin-top: 20px !important;
+        
+        margin: 0 auto;
+        background-color: pink;
+      }
+
+      .icon-circle img {
+        width: 52px;
+        height: 52px;
+        object-fit: contain;
+      }
+
+      /* عنوان زیر آیکون */
+      .service-item p {
+        font-size: 13px;
+        color: #333;
+        margin: 0;
+        line-height: 1.4;
+      }
+
+      /* اسکرول داخل مودال */
+      .more-Service-content {
+        width: 650px;
+        max-height: 80vh;
+        border-radius: 12px;
+        padding: 20px;
+        
+        position: relative;
+        
+      }
+
+      /* استایل اسکرول */
+      .more-Service-content::-webkit-scrollbar {
+        width: 6px;
+      }
+      .more-Service-content::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 10px;
       }
     }
   }
